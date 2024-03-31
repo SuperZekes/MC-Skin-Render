@@ -21,30 +21,9 @@
         <button onclick="changeSkin()">Apply</button>
     </div>
 
-    <script>
-        function changeSkin() {
-            const username = document.getElementById("usernameInput").value;
-            const skinFrame = document.getElementById("skinFrame");
-            const newSrc = `https://minerender.org/embed/skin/?skin=${username}&shadow=true`;
-            skinFrame.src = newSrc;
-        }
-        function downloadSkin() {
-            const username = document.getElementById("usernameInput").value;
-            const skinFrame = document.getElementById("skinFrame");
-            const newSrc = `https://minecraft.tools/download-skin/${username}`;
-            skinFrame.src = newSrc;
-        }
-    </script>
+    <script src="script.js" type="text/javascript"></script>
 
-    <style>
-        iframe {
-            width: 800px;
-            height: 600px;
-            border: 0;
-        }
-        .downloadbtn {
-            margin-top: 10px; /* Adjust this value to move the button higher */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </body>
 </html>
