@@ -1,8 +1,36 @@
 iframe {
-    width: 800px;
+    width: 1000px;
     height: 600px;
     border: 0;
 }
+
 .downloadbtn {
     margin-top: 10px; /* Adjust this value to move the button higher */
 }
+
+.fancy-button {
+    position: relative;
+    top: -2px;
+    
+    background: linear-gradient(to bottom, #337ab7, #2e6da4);
+    border: none;
+    color: #fff;
+    height: 34px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+  }
+  
+  .fancy-button:hover {
+    background: linear-gradient(to bottom, #2e6da4, #337ab7);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2); 
+  }
+  
+  .fancy-button:active {
+    transform: translateY(0);
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+  
